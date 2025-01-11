@@ -71,7 +71,7 @@ class RunError(Exception):
 
 if __name__ == "__main__":
     if not os.environ.get("MHYY_DEBUG", False):
-        wait_time = random.randint(10, 60)  # Random Sleep to Avoid Ban
+        wait_time = random.randint(5, 10)  # Random Sleep to Avoid Ban
         logger.info(f"为了避免同一时间签到人数太多导致被官方怀疑，开始休眠 {wait_time} 秒")
         time.sleep(wait_time)
     try:
